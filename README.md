@@ -1,3 +1,3 @@
 # epicode
 
-- Repo contenente le challange del precorso Web Developer PT by Epicode 
+- Repo contenente test e prove del corso Web Developer PT by Epicode 
