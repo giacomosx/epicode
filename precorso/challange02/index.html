@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>WaveTune! La musica del mare aspetta solo te</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			body {
+				background-color: #f3f4f6;
+			}
+			
+			form {
+				background-color: #fff;
+				box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.1);
+			}
+			
+			h1, p, h2, h3 {
+				text-align: center;
+				color: #444;
+			}
+			main{
+				margin: auto;
+				width: 40em;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 1em;
+			}
+			
+			form{
+				margin: 2em 0 2em 0;
+				border: 1px solid;
+				padding: 0.8em;
+				border-radius: 1em;
+				box-shadow: 0.2em;
+				border-color: #bbb;
+			}
+			
+			form > div{
+				margin-bottom: 0.5em;
+			}
+			
+			label{
+				margin-right: .8em;
+			}
+			
+			input{
+				font-size: 0.9em;
+			}
+			
+			#checkbox_section{
+				margin-bottom: 2em;
+			}
+			
+			#term_condition{
+				font-size: 0.8em;
+				margin-bottom: 2em;
+			}
+			
+			#buttons{
+				text-align: center;
+			}
+			
+			button {
+				box-shadow:inset 0px 1px 0px 0px #ffffff;
+				background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+				background-color:#f9f9f9;
+				border-radius:6px;
+				border:1px solid #dcdcdc;
+				display:inline-block;
+				cursor:pointer;
+				color:#666666;
+				font-family:Arial;
+				font-size:15px;
+				font-weight:bold;
+				padding:6px 24px;
+				text-decoration:none;
+				text-shadow:0px 1px 0px #ffffff;
+			}
+			button:hover {
+				background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+				background-color:#e9e9e9;
+			}
+			button:active {
+				position:relative;
+				top:1px;
+			}	
+				   
+		</style
+	</head>
+	<body>
+		<main>
+			<div>
+				<h1>WaveTunes</h1>
+				<h2>La colonna sonora del tuo viaggio tra le onde</h2>
+			</div>
+			<div>
+				<p>Benvenuti su WaveTunes, il luogo dove il mare si unisce alla musica per creare le tue esperienze sonore più emozionanti.</p>
+			</div>
+			<div>
+				<h3>Registrati oggi e inizia il tuo viaggio musicale con WaveTunes!</h3>
+				<form onsubmit="alert('Registrazione quasi completata. Controlla la tua casella di posta')" >	
+					<div>
+						<label for="nome">Inserisci il tuo nome</label>
+						<input type="text" name="nome" placeholder="Il tuo nome">	
+					</div>
+					<div>
+						<label for="cognome">Inserisci il tuo cognome</label>
+						<input type="text" name="cognome" placeholder="Il tuo cognome">	
+					</div>
+					<div>
+						<label for="email">Inserisci la tua email</label>
+						<input type="email" name="email" placeholder="La tua email">	
+					</div>
+					<div>
+						<label for="password">Inserisci una password</label>
+						<input type="password" name="password" placeholder="Crea una password">
+					</div>
+					<div>
+						<label for="data">Inserisci la tua data di nascita</label>
+						<input type="date" name="data">
+					</div>
+					<div>
+						<label>Inserisci il tuo numero di telefono</label>
+						<input type="number" name="number" placeholder="+39 ....">
+					</div>
+					<div id="checkbox_section">
+						<h4>Seleziona i tuoi gusti musicali</h4>
+						<input type="checkbox" name="rock_genre">
+						<label for="rock_genre">Classic Rock</label>
+						<input type="checkbox" name="hiphop_genre">
+						<label for="hiphop_genre">Hip-Hop</label>
+						<input type="checkbox" name="punk_genre">
+						<label for="punk_genre">Punk Rock</label>
+						<input type="checkbox" name="raggae_genre">
+						<label for="raggae_genre">Raggae</label>
+					</div>
+					<div id="term_condition">
+						<input type="radio" name="term_condition">
+						<label for="term_condition">Accetta i Termini e Condizioni prima di continuare</label>
+					</div>
+					<div id="buttons">
+						<button type="submit">Registrati</button>
+						<button id="reset_button" type="reset">Cancella tutto</button>
+					</div>
+				</form>
+				<p>&copy; 2023 - Giacomo WD</p>
+			</div>
+		</main>
+	</body>
+</html>
