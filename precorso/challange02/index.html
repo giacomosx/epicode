@@ -18,40 +18,44 @@
 			<div>
 				<h3>Registrati oggi e inizia il tuo viaggio musicale con WaveTunes!</h3>
 				<form onsubmit="alert('Registrazione quasi completata. Controlla la tua casella di posta')" >	
-					<div>
+					<div class="flex_container">
 						<label for="nome">Inserisci il tuo nome</label>
 						<input type="text" name="nome" placeholder="Il tuo nome">	
 					</div>
-					<div>
+					<div class="flex_container">
 						<label for="cognome">Inserisci il tuo cognome</label>
 						<input type="text" name="cognome" placeholder="Il tuo cognome">	
 					</div>
-					<div>
+					<div class="flex_container">
 						<label for="email">Inserisci la tua email</label>
 						<input type="email" name="email" placeholder="La tua email">	
 					</div>
-					<div>
+					<div class="flex_container">
 						<label for="password">Inserisci una password</label>
 						<input type="password" name="password" placeholder="Crea una password">
 					</div>
-					<div>
+					<div class="flex_container">
 						<label for="data">Inserisci la tua data di nascita</label>
 						<input type="date" name="data">
 					</div>
-					<div>
+					<div class="flex_container">
 						<label>Inserisci il tuo numero di telefono</label>
 						<input type="number" name="number" placeholder="+39 ....">
 					</div>
 					<div id="checkbox_section">
 						<h4>Seleziona i tuoi gusti musicali</h4>
-						<input type="checkbox" name="rock_genre">
-						<label for="rock_genre">Classic Rock</label>
-						<input type="checkbox" name="hiphop_genre">
-						<label for="hiphop_genre">Hip-Hop</label>
-						<input type="checkbox" name="punk_genre">
-						<label for="punk_genre">Punk Rock</label>
-						<input type="checkbox" name="raggae_genre">
-						<label for="raggae_genre">Raggae</label>
+						<div id="checkbox_flex_container">
+							<input type="checkbox" name="rock_genre">
+							<label for="rock_genre">Classic Rock</label>
+							<input type="checkbox" name="hiphop_genre">
+							<label for="hiphop_genre">Hip-Hop</label>
+							<input type="checkbox" name="punk_genre">
+							<label for="punk_genre">Punk Rock</label>
+							<input type="checkbox" name="raggae_genre">
+							<label for="raggae_genre">Raggae</label>
+							<input type="checkbox" name="ska_genre">
+							<label for="ska_genre">Ska</label>
+						</div>
 					</div>
 					<div id="term_condition">
 						<input type="radio" name="term_condition">

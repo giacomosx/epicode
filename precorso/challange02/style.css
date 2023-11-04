@@ -29,13 +29,29 @@ form{
 	border-color: #bbb;
 }
 
+.flex_container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex_container label {
+	width: 50%
+}
+
+.flex_container input {
+	display: block;
+	width: 40%;
+}
+
+#checkbox_flex_container{
+	display: flex;
+	justify-content: space-around;
+}
+
 form > div{
 	margin-bottom: 0.5em;
 }
 
-label{
-	margin-right: .8em;
-}
 
 input{
 	font-size: 0.9em;
