@@ -14,8 +14,8 @@ a{
 }
 
 #logo-container img{
-    width: 300px;
-    padding-bottom: 15px;
+    width: 230px;
+    padding: 15px;
 }
 
 #logo-container h1{
@@ -28,7 +28,7 @@ nav{
 
 #subtitle{
     width: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
     border-top: 1px solid rgb(245, 209, 100);
     background-color: rgb(253, 250, 238);
     color: rgb(8, 61, 59);
@@ -39,13 +39,17 @@ nav{
 }
 
 article{
-    width: 760px;
+    width: 50%;
     margin: auto;
 }
 
 article h2{
     text-align: center;
     font-size: 2em;
+}
+
+figure{
+    margin: 0;
 }
 
 figure img{
