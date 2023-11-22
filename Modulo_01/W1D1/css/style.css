@@ -41,6 +41,7 @@ nav{
 article{
     width: 50%;
     margin: auto;
+    min-width: 600px;
 }
 
 article h2{
