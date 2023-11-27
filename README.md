@@ -1,3 +1,4 @@
 # epicode
 
-- Repo contenente test e challange del corso Web Developer PT by Epicode 
+- Repo contenente challange del precorso + esercizi di pratica per ogni modulo 
+- Rif. Corso Web Developer PT by Epicode 
