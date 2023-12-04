@@ -33,7 +33,7 @@ ul{margin: 0;}
 ul.info{padding: 0;}
 
 ul.info li{ 
-    margin-right: 30px;
+    margin-right: 20px;
     font-weight: lighter;
 }
 
@@ -461,6 +461,12 @@ footer{
     .article-buttons{
         margin-left: 25px;
     }
+   
+}
 
-    
+@media screen and (max-width: 415px) {
+    nav.nav-tab, .tab{
+        width: 100%;
+    }
+
 }
