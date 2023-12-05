@@ -10,6 +10,6 @@ Web page created starting from a mockup.
 
 
 ## feedback
-If you have any feedback, please reach out to us at giacomo.bartoli@me.com
+If you have any feedback, please reach out to me at giacomo.bartoli@me.com
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
