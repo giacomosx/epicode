@@ -416,7 +416,7 @@ footer{
 @media screen and (max-width:720px) {
     .top-button-container{
         width: 500px;
-        justify-content: space-center;
+        justify-content: center;
     }
 
     .logo-container{
