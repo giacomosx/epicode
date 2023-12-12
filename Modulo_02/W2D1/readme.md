@@ -1,4 +1,4 @@
-Epicode - M2 - Programming Foundations: W1D1 Practice
+Epicode - M2 - Programming Foundations: W2D1 Practice
 
 # Javascript Basis
 
