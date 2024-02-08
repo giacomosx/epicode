@@ -1,0 +1,91 @@
+:root {
+    --gray--primary: #B6B3C5;
+    --gray--secondary: #F5F4F8;
+    --purple: #7550FE;
+    --green: #1BCB98;
+    --orange: #FFAA46;
+    --orange-light: #FFEFD9;
+    --brown: #C28135;
+
+}
+
+@font-face {
+    font-family: 'feather';
+    src: url(./assets/font/feather.ttf);
+}
+
+body {
+    font-family: 'feather', sans-serif;
+    background-color: var(--gray--secondary);
+}
+
+.bg--purple {
+    background-color: var(--purple);
+}
+
+.bg--green {
+    background-color: var(--green);
+}
+
+.text--gray-primary {
+    color: var(--gray--primary);
+}
+
+.text--gray-secondary {
+    color: var(--gray--secondary);
+}
+
+.smallest {
+    font-size: 0.7rem;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--gray--secondary);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    color: var(--gray--primary);
+}
+
+.icon__menu {
+    border-radius: 3px;
+    border: 1px solid var(--purple);
+    color: var(--purple);
+    background-color: #fff;
+}
+
+.stats-list {
+    padding: 0;
+}
+
+.stats-list__item {
+    list-style: none;
+}
+
+.stats-list__item__icon {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    font-size: 1.5rem;
+    background-color: var(--orange-light);
+    color: var(--brown);
+}
+
+.card-info span {
+    vertical-align: middle;
+}
+
+.card-info__icon {
+    font-size: 0.9rem;
+    margin-right: 0.1rem;
+}
+
+.card-info__difficulty__icon {
+    color: var(--purple);
+}
+
+.card-info__review__icon {
+    color: var(--orange);
+}
