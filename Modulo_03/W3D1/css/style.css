@@ -36,7 +36,7 @@ body {
 }
 
 .smallest {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
 }
 
 .icon {
@@ -88,4 +88,98 @@ body {
 
 .card-info__review__icon {
     color: var(--orange);
+}
+
+.card__avatar {
+    width: 20px;
+    height: 20px;
+}
+
+.slides-wrapper {
+    transition: translate 1s linear;
+}
+
+
+.nextBtn {
+    padding: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+}
+.prevBtn {
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    left: 0;
+}
+
+.bookmark {
+    cursor: pointer;
+    height: 0.875rem;
+}
+
+.bookmark path:hover {
+    fill: currentColor;
+}
+  
+.card {
+    transition: all 500ms ;
+}
+
+.card:hover {
+    scale: 1.015;
+    box-shadow: 0 0 5px 2px #ccc;
+}
+
+.dropdown-menu {
+    top: 1.9rem!important;
+}
+
+.bullet {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 0;
+}
+
+.bullet--green {
+    background-color: var(--green);
+    bottom: 0;
+}
+
+.bullet--purple {
+    background-color: var(--purple);
+    top: 0;
+}
+
+.animation {
+    transition: all 500ms;
+}
+
+button.bg--green:hover {
+    background-color: var(--green);
+}
+
+button.btn-light:hover {
+    background-color: var(--gray--secondary);
+}
+
+button.animation:hover {
+    scale: 1.05;
+    box-shadow: 0 0 5px 2px #706f6f;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .small {
+        font-size: 1rem!important;
+    }
+
+    .smallest {
+        font-size: 0.875rem;
+    }
+
 }

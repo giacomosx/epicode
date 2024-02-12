@@ -1,84 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epicode W3D1</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header class="container-fluid bg-white ">
-            <div class="row py-3 align-items-center ">
-                <div class="col-6">
-                    <div class="wrapper--logo navbar-brand ">
-                        <img src="./assets/logo.svg" alt="" class="logo img-fluid ">
-                    </div>
-                </div>
-                <div class="navbar navbar-collapse collapse navbar-expand-lg   ">
-                    <nav class="nav ">
-                        <!-- ul section -->
-                    </nav>
-                </div>
-                <div class="col-6">
-                    <div class="icon__wrapper d-flex justify-content-end align-items-center gap-2 ">
-                        <span class="icon"><ion-icon name="notifications-outline"></ion-icon></span>
-                        <span class="icon d-block lh-1 "><img src="./assets/avatar-1.jpg" alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
-                        <button class="navbar-toggler icon icon__menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><ion-icon name="menu-sharp"></ion-icon></button>
-                    </div>
-                </div>
+    <header class="bg-white ">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand order-md-0">
+                    <img src="./assets/logo.svg" alt="" class="w-100 h-100 logo img-fluid ">
+                </a>
+                <div class="icon__wrapper d-flex justify-content-end align-items-center gap-2 order-md-2">
+                    <span class="icon position-relative ">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                        <div class="bullet bullet--purple"></div>
+                    </span>   
+                    <div class="dropstart  ">
+                        <a class="icon d-block lh-1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/avatar-1.jpg" alt="" class="img-fluid rounded-circle position-relative ">
+                            <div class="bullet bullet--green"></div>
+                        </a>
+                        <div class="dropdown-menu w-auto">
+                            <div class="d-flex  px-2 ">
+                                <span class="icon d-block position-relative ">
+                                    <img src="./assets/avatar-1.jpg" alt="" class="w-100 h-100 img-fluid rounded-circle">
+                                    <div class="bullet bullet--green"></div>
+                                </span>
+                                <div class="w-75 lh-1 ps-1">
+                                    <span class="text-black small ">Annette Black</span>
+                                    <span class="text-secondary small ">annette@geeksui.com</span>
+                                </div>
+                            </div>
+                            <hr class="dropdown-divider">
+                            <ul class="ps-2 m-0 ">
+                                <li class="dropdown-item p-0 small mb-2 "><span class="pe-2"><ion-icon name="person-outline"></ion-icon></span>Profile</li>
+                                <li class="dropdown-item p-0 small mb-2 "><span class="pe-2"><ion-icon name="star-outline"></ion-icon></span>Subscription</li>
+                                <li class="dropdown-item p-0 small mb-2 "><span class="pe-2"><ion-icon name="settings-outline"></ion-icon></span>Settings</li>
+                            </ul>
+                            <hr class="dropdown-divider">
+                            <span class="ps-2 small"><span class="pe-2"><ion-icon name="power-outline"></ion-icon></span>Sign Out</span>
+                        </div>
+                      </div>
+                    <button class=" icon icon__menu d-md-none lh-1  " type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                        <ion-icon name="menu-sharp"></ion-icon>
+                    </button>
+                </div> 
+                <div class="collapse navbar-collapse order-md-1 " id="mainMenu">
+                    <ul class="nav ps-1 gap-2 ">
+                        <li class="nav-item small dropdown">
+                            <a href="" class="nav-link text-black p-0 pe-1 py-2 p-md-3 dropdown-toggle " role="button" data-bs-toggle="dropdown">Browse</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                              </ul>
+                        </li>
+                        <li class="nav-item small dropdown">
+                            <a href="" class="nav-link text-black p-0 pe-1 py-2 p-md-3 dropdown-toggle " role="button" data-bs-toggle="dropdown">Landings</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                              </ul>
+                        </li>
+                        <li class="nav-item small dropdown">
+                            <a href="" class="nav-link text-black p-0 pe-1 py-2 p-md-3 dropdown-toggle " role="button" data-bs-toggle="dropdown">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                              </ul>
+                        </li>
+                        <li class="nav-item small dropdown">
+                            <a href="" class="nav-link text-black p-0 pe-1 py-2 p-md-3 dropdown-toggle " role="button" data-bs-toggle="dropdown">Accounts</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                              </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>              
             </div>
+        </nav>
     </header>
+
     <section id="hero" class="bg--purple pt-3">
-        <div class="container-lg">
+        <div class="container-md">
             <div class="row">
-                <div class="col-12">
-                    <div class="pb-3">
+                <div class="col-12 col-md-6">
+                    <div class="pb-3 d-flex flex-column justify-content-center h-100 ">
                         <h2 class="text-white fw-bold ">Welcome Web Students!</h2>
-                        <p class="text--gray-primary small">Hand-picked Instructor and expertly crdafted courses, designed for the modern students and entrepreneur.</p>
-                        <button class="btn btn-sm  bg--green text-white ">Browse Courses</button>
-                        <button class="btn btn-sm  btn-light ">Are You Instructor?</button>
+                        <p class="text--gray-primary small">Hand-picked Instructor and expertly crdafted courses,
+                            designed for the modern students and entrepreneur.</p>
+                        <div>
+                            <button class="btn btn-sm  bg--green text-white py-2 animation">Browse Courses</button>
+                            <button class="btn btn-sm  btn-light py-2 animation">Are You Instructor?</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-md-6">
                     <img src="./assets/hero-img.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
-    <section id="stats" class="bg-white py-3 ">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-10">
-                    <ul class="stats-list">
-                        <li class="stats-list__item mb-4 ">
+    
+    <section id="stats" class="bg-white py-3">
+        <div class="container-md">
+            <div class="row align-items-md-center h-100 ">
+                <div class="col-10 col-md-12 pb-md-0 ">
+                    <ul class="stats-list d-md-flex gap-md-5 justify-content-md-start  mb-md-0">
+                        <li class="stats-list__item mb-4 mb-md-0 ">
                             <div class="row align-items-center ">
-                                <div class="col-2">
-                                    <span class="stats-list__item__icon icon d-block"><ion-icon name="videocam-outline"></ion-icon></span>
+                                <div class="col-2 col-md-3 col-lg-2 ">
+                                    <span class="stats-list__item__icon icon d-block"><ion-icon
+                                            name="videocam-outline"></ion-icon></span>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-10 col-md-9 col-lg-10">
                                     <p class="fw-bold m-0 small ">30,000 online courses</p>
                                     <p class="text-secondary m-0 small ">Enjoy a variety of fresh topics</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="stats-list__item mb-4 ">
+                        <li class="stats-list__item mb-4 mb-md-0 ">
                             <div class="row align-items-center ">
-                                <div class="col-2">
-                                    <span class="stats-list__item__icon icon d-block"><ion-icon name="people-outline"></ion-icon></span>
+                                <div class="col-2 col-md-3 col-lg-2 ">
+                                    <span class="stats-list__item__icon icon d-block"><ion-icon
+                                            name="people-outline"></ion-icon></span>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-10 col-md-9 col-lg-10 ">
                                     <p class="fw-bold m-0 small ">Expert instruction</p>
                                     <p class="text-secondary m-0 small ">Find the right instructor for you</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="stats-list__item mb-4 ">
+                        <li class="stats-list__item mb-4 mb-md-0 ">
                             <div class="row align-items-center ">
-                                <div class="col-2">
-                                    <span class="stats-list__item__icon icon d-block"><ion-icon name="time-outline"></ion-icon></span>
+                                <div class="col-2 col-md-3 col-lg-2 ">
+                                    <span class="stats-list__item__icon icon d-block"><ion-icon
+                                            name="time-outline"></ion-icon></span>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-10 col-md-9 col-lg-10 ">
                                     <p class="fw-bold m-0 small ">Lifetime access</p>
                                     <p class="text-secondary m-0 small ">Learn on your schedule</p>
                                 </div>
@@ -89,42 +161,747 @@
             </div>
         </div>
     </section>
-    <main class="container-lg">
-        <section class="pt-3 ">
+    
+    <main class="container-md pb-5 pt-5">
+        <!-- Recommended to you  -->
+        <section class="pt-3 mb-3 ">
             <div class="row py-2 ">
                 <div class="col-12">
                     <h3 class="h5">Recommended to you</h3>
                 </div>
             </div>
-            <div class="row row-cols-2">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-img"><img src="./assets/course-graphql.jpg" alt="" class="img-fluid rounded-top "> </div>
-                        <div class="card-body px-2 py-3 ">
-                            <div class="card-title">
-                                <h4 class="small ">Lorem, ipsum dolor.</h4>
-                            </div>
-                            <div class="card-text">
-                                <div class="card-info ">
-                                    <span class="card-info__duration smallest text-secondary "><span class="card-info__icon"><ion-icon name="time-outline"></ion-icon></span>2h 40m</span>
-                                    <span class="card-info__difficulty smallest text-secondary "><span class="card-info__icon card-info__difficulty__icon"><ion-icon name="cellular"></ion-icon></span>Advance</span>
+            <div class="overflow-hidden position-relative slider-wrapper p-2">
+                <button
+                    class="btn rounded-circle bg-light border opacity-50 text-secondary position-absolute z-3 top-50 lh-1 prevBtn d-lg-none "
+                    data-g-slider="slides-recommend"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                <button
+                    class="btn rounded-circle bg-light border opacity-50 text-secondary position-absolute z-3 top-50 lh-1 nextBtn d-lg-none"
+                    data-g-slider="slides-recommend"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                <div class="row flex-nowrap slides-wrapper" id="slides-recommend">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-graphql.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
                                 </div>
-                                <div class="card-info__review ">
-                                    <span class="smallest text-secondary ">
-                                        <span class="card-info__review__icon">
-                                            <ion-icon name="star"></ion-icon>2.5</span>
-                                            <ion-icon name="star"></ion-icon>2.5</span>
-                                            (1,500)</span>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-5.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Brooklyn Simmons</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smalles"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer"></div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-javascript.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-1.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Jenny Wilson</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-node.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-3.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Sina Ray</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest "> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-laravel.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-7.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Sobo Rikhan</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Most popular -->
+        <section class="pt-3 mb-3 ">
+            <div class="row py-2 ">
+                <div class="col-12">
+                    <h3 class="h5">Most Popular</h3>
+                </div>
+            </div>
+            <div class="overflow-hidden position-relative slider-wrapper p-2 ">
+                <button
+                    class="btn rounded-circle bg-light border opacity-50 text-secondary position-absolute z-3 top-50 lh-1 prevBtn d-lg-none "
+                    data-g-slider="slides-popular"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                <button
+                    class="btn rounded-circle bg-light border opacity-50 text-secondary position-absolute z-3 top-50 lh-1 nextBtn d-lg-none"
+                    data-g-slider="slides-popular"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                <div class="row flex-nowrap slides-wrapper" id="slides-popular">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-graphql.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-5.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Brooklyn Simmons</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-javascript.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-1.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Jenny Wilson</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-node.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-3.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Sina Ray</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-laravel.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-7.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Sobo Rikhan</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Trending -->
+        <section class="pt-3 mb-3 ">
+            <div class="row py-2 ">
+                <div class="col-12">
+                    <h3 class="h5">Trending</h3>
+                </div>
+            </div>
+            <div class="overflow-hidden position-relative slider-wrapper p-2 ">
+                <button
+                    class="btn rounded-circle bg-light border opacity-50 text-secondary position-absolute z-3 top-50 lh-1 prevBtn d-lg-none "
+                    data-g-slider="slides-trending"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                <button
+                    class="btn rounded-circle bg-light border opacity-50 text-secondary position-absolute z-3 top-50 lh-1 nextBtn d-lg-none"
+                    data-g-slider="slides-trending"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                <div class="row flex-nowrap slides-wrapper" id="slides-trending">
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-graphql.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-5.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Brooklyn Simmons</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-javascript.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-1.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Jenny Wilson</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-node.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-3.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Sina Ray</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-img"><img src="./assets/course-laravel.jpg" alt=""
+                                    class="img-fluid rounded-top "> </div>
+                            <div class="card-body px-2 py-3 ">
+                                <div class="card-title">
+                                    <h4 class="small ">Lorem, ipsum dolor.</h4>
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-info">
+                                        <span class="card-info__duration smallest text-secondary "><span
+                                                class="card-info__icon"><ion-icon
+                                                    name="time-outline"></ion-icon></span>2h 40m</span>
+                                        <span class="card-info__difficulty smallest text-secondary "><span
+                                                class="card-info__icon card-info__difficulty__icon"><ion-icon
+                                                    name="cellular"></ion-icon></span>Advance</span>
+                                    </div>
+                                    <div class="card-info__review ">
+                                        <span class="smallest text-secondary ">
+                                            <span class="card-info__review__icon px-0">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                2.5</span>
+                                            (1,500)
+                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        <span class="small fw-bold ">500$</span>
+                                        <span class="text-secondary text-decoration-line-through smallest">600$</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer px-1 px-lg-2">
+                                <div class="d-flex justify-content-between ">
+                                    <div class="d-flex align-items-center  ">
+                                        <span class="icon d-block lh-1 card__avatar"><img src="./assets/avatar-7.jpg"
+                                                alt="" class="w-100 h-100 img-fluid rounded-circle"></ion-icon></span>
+                                        <span class="text-secondary smallest px-1">Sobo Rikhan</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-secondary smallest"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="ionicon bookmark" viewBox="0 0 512 512">
+                                                <path
+                                                    d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z"
+                                                    fill="none" stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="32" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+    <footer class="border-top py-2 container-lg ">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="text-secondary small mb-0">
+                        &copy; 2022 Geeks. All Right Reserved.
+                    </p>
+                    <ul class="p-0 nav gap-3 justify-content-center ">
+                        <li><a href="" class="text-secondary text-decoration-none small">Privacy</a></li>
+                        <li><a href="" class="text-secondary text-decoration-none small">Terms</a></li>
+                        <li><a href="" class="text-secondary text-decoration-none small">Feedback</a></li>
+                        <li><a href="" class="text-secondary text-decoration-none small">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
