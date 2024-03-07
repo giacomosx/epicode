@@ -64,5 +64,52 @@ console.log('Ex 5: ', sumArrayItems([10,4,6]));
 //Ex 6
 
 const checkNumbers = (array) => {
-    
+    if (array.includes(3) || array.includes(1)) {
+        return false
+    } else return true 
 }
+
+console.log('Ex 6: ', checkNumbers([2, 4, 5, 6]));
+
+
+// Ex 7
+
+const checkAngle = (grade) => {
+    if (grade < 90) {
+        return 'acuto'
+    }
+    
+    if (grade > 90 && grade < 180) {
+        return 'ottuso'
+    }
+    
+    if (grade === 90) {
+        return 'retto'
+    }
+    
+    if (grade === 180) {
+        return 'piatto'
+    }
+
+    return 'inserisci un valore valido'
+}
+
+console.log('Ex 7: ', checkAngle(150));
+
+
+// Ex 8
+
+const getAcronym = (string) => {
+    const splittedString = string.split(' ');
+    let acronym = '';
+
+    splittedString.map(word => {
+        
+        const firstChar = word.split('').shift()
+        acronym += firstChar + '.'
+    })
+    
+    return acronym
+}
+
+console.log('Ex 8: ', getAcronym('fabbrica italiana automobili torino'));
